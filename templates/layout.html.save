@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+  <title>Internet Canção Nova</title>
+
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="logo">Internet Canção Nova</h2>
+        <strong>
+            <div id="nav">
+                <ul>
+                    <li><a href="{{ url_for('home')}}">Home</a></li>
+                    <li><a href="#">Resumo</a>
+                    <ul>
+                          <li><a href="{{ url_for('followup_mensal')          }}">Follow-up Mensal</a></li>
+                          <li><a href="{{ url_for('followup_diario')          }}">Follow-up Diário</a></li>
+                          <li><a href="{{ url_for('internetgeral')    }}">Internet Geral</a></li>
+                          <li><a href="{{ url_for('mobile')           }}">Aplicativo Mobile</a></li>
+                          <li><a href="{{ url_for('blog')             }}">Blog</a></li>
+                          <li><a href="{{ url_for('stream')           }}">Stream e PodCast</a></li>
+
+                    </ul>
+                    <li><a href="#">Midia Social</a>
+                    <ul>
+                          <li><a href="{{ url_for('instagram')          }}">Instagram</a></li>
+                          <li><a href="{{ url_for('facebook')          }}">Facebook</a></li>
+                          <li><a href="{{ url_for('twitter')          }}">Twitter</a></li>
+
+                    </ul>     
+
+                    </li>
+                    <li><a href="#">Redação Web CN</a>
+                    <ul>
+                          <li><a href="{{ url_for('texto_formacao')          }}">Formação</a></li>
+                          <li><a href="{{ url_for('texto_pejonas')          }}">Pe. Jonas Abib</a></li>
+                          <li><a href="{{ url_for('texto_luzia')          }}">Luzia Santiago</a></li>
+                          <li><a href="{{ url_for('texto_eto')          }}">Wellington Jardim-Eto</a></li>
+                          <li><a href="{{ url_for('texto_clube')          }}">Clube da Evangelização</a></li>
+                          <li><a href="{{ url_for('texto_santuario')          }}">Santuário do Pai das Misericórdias</a></li>
+                          <li><a href="{{ url_for('texto_musica')          }}">Música</a></li>
+                          <li><a href="{{ url_for('texto_noticias')          }}">Notícias</a></li>
+                          <li><a href="{{ url_for('texto_mensagem')          }}">Mensagem</a></li>
+                          <li><a href="{{ url_for('texto_capa')          }}">Capa www.cancaonova.com</a></li>
+                          <li><a href="{{ url_for('texto_espanhol')          }}">Espanhol</a></li>
+
+                    </ul>     
+                     
+                    </li>
+                    </li>
+ 	                   <li><a href="#">Canal Web </a>
+    
+        <ul>
+
+                          <li><a href="{{ url_for('liturgia')         }}">Liturgia</a></li>
+                          <li><a href="{{ url_for('formacao')         }}">Formação</a></li>
+                          <li><a href="{{ url_for('capa')             }}">Capa</a></li>                          
+                          <li><a href="{{ url_for('tvcn')             }}">TvCn</a></li>
+                          <li><a href="{{ url_for('homilia')          }}">Homilia</a></li>
+                          <li><a href="{{ url_for('santo')            }}">Santo do Dia</a></li>
+                          <li><a href="{{ url_for('eventos')          }}">Eventos</a></li>
+                          <li><a href="{{ url_for('noticias')         }}">Notícias</a></li>
+                          <li><a href="{{ url_for('clube')            }}">Clube</a></li>
+                          <li><a href="{{ url_for('pejonas')          }}">Pe Jonas Abib</a></li>
+                          <li><a href="{{ url_for('luzia')            }}">Luzia Santiago</a></li>                          
+                          <li><a href="{{ url_for('eto')              }}">Eto</a></li>
+                          <li><a href="{{ url_for('musica')           }}">Música</a></li>
+                          <li><a href="{{ url_for('espanhol')         }}">Canção Nova Espanhol</a></li>
+
+        </ul>
+                    
+                    </li>                                  
+
+                <li><a href="#">Rádio  </a>
+        <ul>
+                          <li><a href="{{ url_for('radiototal')  }}">Web Rádios</a></li>
+                          <li><a href="{{ url_for('fm_cpta')     }}">Web FM Cachoeira Paulista</a></li>
+                          <li><a href="{{ url_for('fm_bsb')      }}">Web FM Brasília</a></li>
+                          <li><a href="{{ url_for('am_cpta')     }}">Web AM Cachoeira Paulista</a></li>
+                          
+        </ul>
+
+                </li>
+                  
+
+         </div> 
+        </strong>
+    </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+  <title>AIPF</title>
+
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="logo">Economato Geral Comunidade Canção Nova</h2>
+        <strong>
+            <div id="nav">
+                <ul>
+                    <li><a href="{{ url_for('home')}}">Home</a></li>
+                    <li><a href="#">Resumo</a>
+                    <ul>
+                          <li><a href="{{ url_for('resultado_mensal')          }}">Resultado Mensal</a></li>
+                          
+
+                    </ul>
+                    <li><a href="#">Teste</a>
+                    <ul>
+                          
+
+
+
+                    </ul>     
+
+                    </li>
+                    <li><a href="#">tete2</a>
+                    <ul>
+                          
+
+
+
+                    </ul>     
+                     
+                    </li>
+                    </li>
+ 	                   <li><a href="#">teste3 </a>
+    
+        <ul>
+
+                          
+
+
+
+
+        </ul>
+                    
+                    </li>                                  
+
+                <li><a href="#">teste4  </a>
+        <ul>
+                          
+
+
+
+                          
+                          
+        </ul>
+
+                </li>
+                  
+
+         </div> 
+        </strong>
+    </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

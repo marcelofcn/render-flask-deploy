@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<strong>
+<font color='gray' size='4' face='arial'>
+<h3><h3>
+<h3>  <h3
+
+<img src="{{url_for('static', filename='img/logo40anos.jpeg', width=400, height=300, quality=95)}}" />
+
+<div id="contents">  		
+<div class="blogentry">  			
+			
+	<script language="JavaScript">
+
+	document.write("<font color= '#8B7765' size='3' face='times new roman'>")
+	var mydate=new Date()
+	var year=mydate.getYear()
+	if (year<2000)
+	year += (year < 1900) ? 1900 : 0
+	var day=mydate.getDay()
+	var month=mydate.getMonth()
+	var daym=mydate.getDate()
+	if (daym<10)
+	daym="0"+daym
+	var dayarray=new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado")
+	var montharray=new Array("Janeiro ","Fevereiro ","Março ","Abril ","Maio ","Junho ","Julho ","Agosto ","Setembro ","Outubro ","Novembro ","Dezembro ")
+	document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
+	document.write("</b></i></font>")
+	</script>
+</div>	
+<div id="contents"
+	<div>
+<div align="center"><h6> <font color= '#8B6914' face='times new roman'  pr /> Atualização diária - Ano 2017! </h6></div>
+<div  
+</p>
+<div align="center"><h6>
+	<h4> </h4>
+
+</h6></div>
+</div>
+
+{% endblock %}

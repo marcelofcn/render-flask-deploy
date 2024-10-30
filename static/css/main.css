@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-        serif;
+  color: #444;
+  font-size: 12px;
+}
+
+header {
+  background-color: #1E90FF;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+header h2.logo {
+  margin: 0;
+  font-size: 1.57em;
+  color: #fff;
+  text-transform: uppercase;
+  float: center;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+{
+
+figure {
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+
+  
+}
+
+
+
+
+/*
+ * defini os item de menu
+ */
+
+.menu {
+  float: left;
+  list-style: none;
+  border: 1px solid #c0c0c0;
+}
+
+#.menu li {
+# position:relative; 
+# float:left; 
+# border-right:1px solid #c0c0c0; 
+}
+
+#.menu li + li {
+#  margin-left: 35px;
+#}
+
+#.menu li ul {
+#  position: absolute;
+#  top: 25px;
+#  left: 0;
+#  background-color: #fff;
+#  display: none;
+#}
+
+#.menu li a {
+#  color: #333;
+#  text-decoration: none;
+#  padding: 5px 10px;
+#  display: block;
+#}
+
+#.menu li a:hover {
+#  color: #fff;
+#  background: #333;
+#  -moz-box-shadow: 0 3px 10px 0 #ccc;
+#  -webkit-box-shadow: 0 3px 10px 0 #ccc;
+#  text-shadow: 0px 0px 5px #fff;
+#}
+
+#.menu li ul li{
+# border: 1px solid #c0c0c0;
+# display: block;
+# width: 150px;
+#}
+
+/*
+ * Center the body content
+ */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*
+ * Sub Menu(left float)
+ */
+
+#nav {
+      float:center;
+    margin:40px;
+}
+#nav ul { 
+        font:16px arial,tahoma,verdana;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#nav ul li {
+     float:left;
+     position:relative;
+     display:block;
+}
+#nav ul li a {
+       color:#555;
+       background:#fff;
+       text-decoration:none;
+       margin:0 1px;
+       padding:15px 20px;
+       border-top:1px solid #555;
+       display:block;
+}
+#nav li ul {
+          display:none;
+}
+#nav ul li a:hover {
+                 background:#066;
+         color:#fff;
+}
+#nav li:hover ul {
+               display:block;
+         position:relative;
+}
+#nav li:hover li {
+              float:none;
+        font-size:12px;
+}
+#nav li:hover a {
+              background:#333;
+        color:#fff;
+}
+#nav li:hover li a:hover {
+                      background:#222;
+}
